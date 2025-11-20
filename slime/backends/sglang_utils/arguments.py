@@ -26,6 +26,12 @@ def add_sglang_router_arguments(parser):
         default=3600,
         help="Timeout for requests to the SGLang router in seconds",
     )
+    parser.add_argument(
+        "--sglang-router-policy",
+        type=str,
+        default='cache_aware',
+        help="Router policy for SGLang",
+    )
     return parser
 
 
