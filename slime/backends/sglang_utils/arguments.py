@@ -32,6 +32,18 @@ def add_sglang_router_arguments(parser):
         default='cache_aware',
         help="Router policy for SGLang",
     )
+    parser.add_argument(
+        "--sglang-router-balance-abs-threshold",
+        type=float,
+        default=64,
+        help="Absolute threshold for balancing the SGLang router",
+    )
+    parser.add_argument(
+        "--sglang-router-balance-rel-threshold",
+        type=float,
+        default=1.5,
+        help="Relative threshold for balancing the SGLang router",
+    )
     return parser
 
 

@@ -431,6 +431,8 @@ def _start_router(args):
             port=args.sglang_router_port,
             balance_abs_threshold=0,
             policy=args.sglang_router_policy,
+            balance_abs_threshold=args.router_balance_abs_threshold,
+            balance_rel_threshold=args.router_balance_rel_threshold,
             prometheus_port=find_available_port(random.randint(4000, 5000)),
         )
 
