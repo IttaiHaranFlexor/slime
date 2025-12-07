@@ -35,7 +35,7 @@ def add_sglang_router_arguments(parser):
     parser.add_argument(
         "--sglang-router-balance-abs-threshold",
         type=float,
-        default=64,
+        default=0,
         help="Absolute threshold for balancing the SGLang router",
     )
     parser.add_argument(
